@@ -5,6 +5,7 @@ export const Home = () => {
 	return (
 		<>
 			<div>Tour Recommendation</div>
+			<TourCard></TourCard>
 		</>
 	)
 }
