@@ -1,9 +1,13 @@
 import React from 'react'
-import { Paper } from '@mui/material'
+import { Container, Grid, Paper } from '@mui/material'
 
 const TourCard = () => {
 	return (
-		<Paper elevation={3}>TourCard</Paper>
+		<>
+			<Grid item xs={3}>
+				<Paper elevation={3}>TourCard</Paper>
+			</Grid>
+		</>
 	)
 }
 
