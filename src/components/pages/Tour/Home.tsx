@@ -2,12 +2,13 @@ import { Container, Grid } from '@mui/material'
 import React from 'react'
 import TourCard from '../../molecules/TourCard'
 import TourRanking from '../../molecules/TourRanking'
+import SearchAppBar from '../../organisms/AppBar'
 
 export const Home = () => {
 	return (
 		<>
-			<div>Tour Recommendation</div>
-			<Container>
+			<SearchAppBar />
+			<Container sx={{ mt: 5 }} >
 				<TourRanking />
 			</Container>
 		</>
