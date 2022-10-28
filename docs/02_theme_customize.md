@@ -83,3 +83,14 @@ export const SampleComponent = () => {
   );
 };
 ```
+
+## 参考
+
+- Theming:  
+  https://mui.com/material-ui/customization/theming/
+
+- Theme Components:  
+  https://mui.com/material-ui/customization/theme-components/
+
+- Module augmentation (TypeScript Document):  
+  https://www.typescriptlang.org/docs/handbook/declaration-merging.html#module-augmentation
