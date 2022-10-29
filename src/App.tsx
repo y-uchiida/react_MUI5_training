@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
 import reactLogo from './assets/react.svg'
 import './App.css'
 import { Home as TourHome } from './components/pages/Tour/Home'
+import TourInformation from './components/pages/Tour/TourInformation'
+import { Layout as TourLayout } from './components/Layouts/Tour/Layout'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -36,7 +39,10 @@ function App() {
             </>
           }>
           </Route>
-          <Route path="/tour" element={<TourHome />} />
+          <Route path="/tour" element={<TourLayout />}>
+            <Route path="" element={<TourHome />} />
+            <Route path=":id" element={<TourInformation />} />
+          </Route>
         </Routes>
 
       </Router>
